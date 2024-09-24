@@ -51,7 +51,6 @@ def interface():
             print(method)
             print(input_value)
             input_text = entry_text.get()
-            input_text = "Nazarov Mykyta Yuriyovych"
             if input_value == 0:  
                 entry_shift_value = int(entry_shift.get())  
                 result = method(cipher, input_text, entry_shift_value,entry_key)
@@ -86,8 +85,8 @@ def interface():
             entry_shift = None  
             entry_key = None
 
-        decrypt_button.pack(pady=10) 
         encrypt_button.pack(pady=10)  
+        decrypt_button.pack(pady=10) 
         result_widget_frame.pack_propagate(False) 
         text_input.focus()
     
